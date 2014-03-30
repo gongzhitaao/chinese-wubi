@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2005 Yuwen Dai
 ;; Copyright (C) 2005 William Xu
-;; Copyright (C) 2014  Zhitao Gong
+;; Copyright (C) 2014 Zhitao Gong
 
 ;; Authors: Yuwen Dai <daiyuwen@freeshell.org>
 ;;          William Xu <william.xwl@gmail.com>
@@ -29,7 +29,7 @@
 ;; Place the chinese-wubi.el and the chinese-wubi-rules.el in your
 ;; load path, and add the following in your .emacs file:
 
-;; (require 'chinesewubi)
+;; (require 'chinese-wubi)
 ;; (register-input-method
 ;;  "chinese-wubi" "Chinese-GB" 'quail-use-package "wubi" "wubi")
 
@@ -146,7 +146,7 @@ Modified by Zhitao Gong (me@gongzhitaao.org).
   (" " . quail-select-current))
 nil nil nil nil)
 
-(load-file "./chinese-wubi-rules.el")
+(load "chinese-wubi-rules.el")
 
 (provide 'chinese-wubi)
 ;;; chinese-wubi.el ends here
